@@ -1,4 +1,6 @@
 
+require "simplecov-console-test/full-coverage"
+
 class SimpleCovConsoleTest
   def add(a, b)
     return a+b
