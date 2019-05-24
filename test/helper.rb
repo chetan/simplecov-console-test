@@ -5,10 +5,10 @@ require "bundler/setup"
 require "simplecov"
 require "simplecov-console"
 SimpleCov.start do
-  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::Console
-  ]
+  ])
 end
 require "simplecov-console-test"
 
