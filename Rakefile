@@ -9,6 +9,7 @@ rescue Bundler::BundlerError => e
   $stderr.puts "Run `bundle install` to install missing gems"
   exit e.status_code
 end
+# frozen_string_literal: true
 require 'rake'
 require 'juwelier'
 Juwelier::Tasks.new do |gem|

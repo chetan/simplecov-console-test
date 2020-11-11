@@ -2,8 +2,8 @@ source "https://rubygems.org"
 
 group :development do
   gem "minitest", ">= 0"
-  gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0"
+  gem "rdoc", "~> 6"
+  gem "bundler", "~> 2.1"
   gem "juwelier", "~> 2.1.0"
   gem "simplecov", ">= 0"
 
