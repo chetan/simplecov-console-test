@@ -1,5 +1,6 @@
 
 require "simplecov-console-test/full-coverage"
+require "simplecov-console-test/no-coverage"
 
 class SimpleCovConsoleTest
   def add(a, b)
