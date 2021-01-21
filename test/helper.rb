@@ -13,6 +13,9 @@ SimpleCov.start do
     # enable branch coverage
     enable_coverage :branch
   end
+  if ENV['WIDTH']
+    SimpleCov::Formatter::Console.table_options = {:style => { :width => ENV['WIDTH'].to_i }}
+  end
   SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::Console
